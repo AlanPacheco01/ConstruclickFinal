@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es-419">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/AvisoPrivacidad.css">
+    <link rel="stylesheet" href="../css/GuiaDiseño.css"> <!-- Se cargan los diseños de la pagina principal -->
+    <!-- Se importa Boostrap 5.3v -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Aviso de Privacidad</title>
+    <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Aqui va a estar la navbar version web-->
+        <nav class="navBar--container" id="navBarWeb">
+            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+          
+            <!-- Boton con menu desplegable y los otros botones-->
+            <div class="links--container">
+                <div class="dropdown">
+                    <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contrata
+                    </button>
+                    <ul type="none" class="dropdown-menu">
+                        <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                        <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                        <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                        <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                        <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                        <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                        <li><a class="item" href="./catalogo.html">Otros</a></li>
+                    </ul>
+                </div>
+                <div>
+                <a href="./publicarServicio.html" class="buttonNavBar">Anúnciate</a>
+            </div>
+                <div>
+                <a href="./AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
+            </div>
+        </div>
+            <!-- Botones iniciar sesion y registrate -->
+            <div id="usuarios">
+                <a href="./login.html" class="buttonNavBar">Iniciar Sesión</a>
+                /
+                <a href="./registroPagina1.html" class="buttonNavBar">Regístrate</a>
+            
+    
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
+        
+            <!-- Barra de busqueda -->
+            <form action="" method="post" class="searchNavBar">
+                <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
+                <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
+            </form>
+            </div>
+        </div>
+    </nav>
+    
+        <!-- Aqui va a estar la navbar version movil -->
+        <nav class="navBar--container navbar" id="navBarMobile">
+            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
+            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+            <!-- Funcionalidad de la lupa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
+                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
+            </button>
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
+            <!-- Menu de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
+                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul type="none">
+                    <li>
+                        <div class="dropdown">
+                            <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
+                                Contrata
+                            </button>
+                            <ul type="none" class="dropdown-menu">
+                                <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                                <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                                <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                                <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                                <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                                <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                                <li><a class="item" href="./catalogo.html">Otros</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./html/publicarServicio.html" class="buttonNavBar item">Anúnciate</a>
+                    </li>
+                    <li>
+                        <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conócenos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="lupa">
+                <form action="" method="post" class="searchNavBar">
+                    <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                    <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg"
+                            alt="Icono de una lupa"></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+             <!-- termina NavBar -->
+        
+    <div id="main-container">
+        <div id="list-container">
+            <ul>
+                <li id="derechosArc" type="click"><p>Derechos ARCO</p></li>
+                <li id="datosPer" type="click"><p>Datos Personales</p></li>
+                <li  id="identDom" type="click"><p>Identidad y Domicilio</p></li>
+                <li id="tratamDato" type="click"><p>Tratamiento de datos</p></li>
+            </ul>
+        </div>
+        <div id="text-container">
+            <div id="DerechosArco">
+                <h3>Derechos ARCO</h3>
+                <p>DERECHOS ARCO Y REVOCACIÓN DEL CONSENTIMIENTO. Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (rectificación); que la eliminemos de nuestros registros o bases de datos (cancelación); así como oponerse al uso de sus datos personales para fines específicos (oposición). Estos derechos se conocen como derechos ARCO. Para ejercer sus derechos ARCO, usted deberá enviar su solicitud al Departamento de Protección de Datos al correo electrónico clientes@constructclick.com La solicitud deberá contener los siguientes datos:Nombre del titular de los datos.Domicilio y dirección de correo electrónico para notificarle la respuesta a su solicitud.Descripción clara y precisa de los datos respecto de los cuales busca ejercer el derecho correspondiente.Objeto de la solicitud.Cualquier elemento que facilite la localización de los datos. Asimismo, deberá anexar copia de su identificación y en su caso el documento mediante el cual se acredite la representación legal.El plazo de respuesta de la solicitud será de 20 días hábiles contados a partir del día en que se recibió la solicitud de ejercicio de derechos ARCO. La respuesta le será comunicada dentro del plazo antes mencionado a la dirección de correo electrónico que proporcionó en su solicitud o enviando carta al domicilio proporcionado en la misma. Una vez recibida dicha notificación, tendrá un plazo de 15 días hábiles para hacerla efectiva en caso de ser procedente. En cualquier momento usted podrá revocar el consentimiento otorgado para el tratamiento de sus datos personales, de tal forma que Constructclick deje de hacer uso de los mismos. Para ello, deberá presentar una solicitud en los términos mencionados, para el ejercicio de los derechos ARCO. El procedimiento a seguir será el mismo que el previsto para el ejercicio de los derechos ARCO. En caso de ser procedente su solicitud, sus datos dejarán de ser tratados por el Responsable.MEDIOS PARA LIMITAR EL USO O DIVULGACIÓN DE SUS DATOS PERSONALES. Sus datos personales serán tratados bajo la más estricta confidencialidad, cuidando las medidas de seguridad administrativas, físicas y técnicas que Constructclick implemente en sus políticas y procedimientos de seguridad internos, evitando la posible divulgación ilícita de datos y limitando su uso a lo establecido en el presente Aviso de Privacidad. Constructclick se compromete a utilizar los medios razonables de protección para garantizar la seguridad de los datos personales. En el caso en que exista una vulneración que afecte la seguridad de los datos personales, Constructclick se compromete a notificar de manera inmediata al titular la naturaleza del incidente, los datos personales comprometidos, recomendaciones que el titular puede adoptar.
+                    
+                </p>
+                    
+            </div>
+            <div id="DatosPersonales">
+                <h3>Datos Personales</h3>
+                <p>
+                   Constructclick recabará las siguientes categorías de Datos Personales: (i) Datos de identificación, (ii) Imágenes, videos y sonidos de las cámaras de video-vigilancia de las instalaciones de Constructclick y zona perimetral, (iii) Datos de contacto, y (iv) Datos fiscales y/o patrimoniales.DATOS PERSONALES SENSIBLES. Constructclick no recaba datos personales sensibles, en caso de ser necesario se solicitará su consentimiento expreso para dichos efectos. Cualquier otro dato que usted nos proporcione y no sea requerido conforme a lo expuesto en el presente Aviso de Privacidad será inmediatamente eliminado de las bases de datos de Constructclick.
+                </p>
+            </div>
+            <div id="IdentidadDom">
+                <h3>Identidad y Domicilio</h3>
+                <p>
+                    Aviso de Privacidad Constructclick S.A. DE C.V.IDENTIDAD Y DOMICILIO DEL RESPONSABLE. CONSTRUCLICK, S.A. DE C.V. (Constructclick), con domicilio en Av. Xxx número xxx, Piso x, Col.xxx Hipódromo Condesa, C.P. xxx, Ciudad de México, es el responsable del tratamiento de sus datos personales.DATOS PERSONALES RECABADOS. Con el propósito de entablar una relación jurídica entre Constructclick y el Titular.               
+                 </p>
+                    
+            </div> 
+            <div id="TratamientoDatos">
+                <h3>Tratamiento de datos</h3>
+                <p>
+                    FINALIDADES PRIMARIAS. Con el propósito de entablar una relación jurídica entre Constructclick y el Titular, Constructclick tratará los Datos Personales para la consecución de las finalidades que se describen a continuación:Cotización de productos  y materiales de construcción y servicios del mismo que usted requiera.informacion de productos de terceros .Gestionar y procesar .Emitir los comprobantes fiscales correspondientes respecto de los servicios y/o productos requeridos siempre y cuando el proveedor así lo notifique y requiera la intervencion.Gestionar y permitir el acceso a su cuenta, en caso de registrarse en alguna de las plataformas web de Constructclick.Procesar y atender sus solicitudes en caso de que se ponga en contacto con nuestro departamento de atención a clientes.Constructclick podrá realizar video-vigilancia al interior y en la zona perimetral de sus instalaciones con la finalidad de preservar y garantizar su seguridad y la de las instalaciones de Constructclick.FINALIDADES SECUNDARIAS. Igualmente, Constructclick puede dar tratamiento a los Datos Personales con finalidades que no dan origen a la relación jurídica ente Constructclick y el Titular, ni son necesarias para la existencia de la relación jurídica entre Constructclick y el Titular, las cuales consisten en:Llevar a cabo encuestas a efecto de evaluar la calidad de los servicios y/o productos prestados por Constructclick.Enviarle por diversos medios información respecto de nuestros servicios, productos y promociones.Invitarlo a participar en rifas, sorteos, concursos, eventos y programas de incentivos.En caso de que usted no quiera que sus datos personales sean tratados para alguna de las finalidades descritas en este apartado, favor de enviar un correo electrónico a datospersonales.clientes@constructclick.com; En caso de que usted no manifieste su negativa para el tratamiento de sus datos personales dentro de un plazo de 5 días hábiles, se entenderá que usted ha otorgado su consentimiento.USO DE COOKIES Y WEB BEACONS. Le informamos que en nuestro sitio web podemos hacer uso de cookies, web beacons y otras tecnologías de rastreo que nos permiten cumplir con las finalidades informadas en el presente Aviso de Privacidad. Los diferentes tipos de cookies que utilizamos son:Cookies esenciales: para permitirle un uso adecuado de nuestro sitio web, por lo que las mismas no pueden ser deshabilitadas. Cookies para recordar sus preferencias y experiencia: estas cookies nos permiten recordar sus preferencias, opciones de navegación y funciones personalizadas. Cookies para objetivos de rendimiento y análisis: podemos usar cookies propias y de terceros para identificar la forma en la cual usted utiliza nuestros Servicios con la finalidad de mejorar su rendimiento y futuros desarrollos. Cookies publicitarias propias y de terceros: podemos colocar cookies publicitarias propias y de terceros (como socios comerciales y empresas del grupo) para mostrarle publicidad que consideremos relevante para usted.Usted puede deshabilitar el uso de cookies, a través de su navegador siguiendo el procedimiento establecido por éste. Aquí alguna información del procedimiento establecido en los siguientes navegadores: Internet Explorer: Herramientas -> Opciones de Internet -> Privacidad -> Configuración. Para más información, puede consultar el soporte de Microsoft o la Ayuda del navegador. Firefox: Herramientas -> Opciones -> Privacidad y Seguridad. Para más información, puedes consultar el soporte de Mozilla o la Ayuda del navegador. Chrome: Configuración -> Verificación de seguridad y/o -> Privacidad y seguridad. Para más información, puede consultar el soporte de Google o la Ayuda del navegador. Safari: Preferencias -> Seguridad. Para más información, puede consultar el soporte de Apple o la Ayuda del navegador. Edge: Configuración -> Privacidad, búsqueda y servicios y/o Permisos del sitio. Para más información, puede consultar el soporte de Microsoft o la Ayuda del navegador.TRANSFERENCIAS. Para poder brindar el servicio adecuadamente realizamos distintas transferencias y/o remisiones de datos. Los datos personales podrán ser transferidos o remitidos a empresas subsidiarias o afiliadas de Constructclick, en el entendido de que sus datos personales en todo momento serán tratados conforme al consentimiento otorgado en el presente Aviso de Privacidad y en el entendido de que dichas subsidiarias y afiliadas operan bajo las mismas políticas de protección de datos personales que Constructclick y siempre sujetas a obligaciones de confidencialidad. Sus datos personales podrán ser transferidos en caso de que sea necesario para el cumplimiento de la ley o por requerimiento de autoridad competente debidamente fundado y motivado, en todo momento Constructclick se asegurará de que la información revelada sea la estrictamente indispensable conforme a la ley o el requerimiento. Sus datos personales podrán ser compartidos con el destinatario y usted declara que obtuvo los datos personales del destinatario de forma lícita. Para efectos de los cobros a través de nuestros sitios de internet Constructclick utiliza terceros proveedores de procesamiento de pagos, dichos terceros están obligados a guardar sus datos bajo la más estricta confidencialidad y a utilizarlos exclusivamente para los fines que Constructclick le autorice conforme al presente Aviso de Privacidad. Cualquier transferencia de datos adicional que Constructclick realice y requiera de su consentimiento se lo notificará de manera personal a efecto de que pueda consentir o negar dicho consentimiento.
+                </p>
+            
+            </div>
+        </div>
+    </div>
+
+
+         
+     <!-- Aqui va a estar el footer -->
+     <footer>
+        <div>
+            <h2><a href="./contacto.html">Contacto</a></h2>
+            <a href="mailto:service@construclick.com">service@construclick.com</a>
+            <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
+            <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
+            <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
+        </div>
+        <div>
+            <h2><a href="./catalogo.html">Catálogo</a></h2>
+            <a href="./Contratar_Servicio.html">Contrata</a>
+            <a href="./publicarServicio.html">Anúnciate</a>
+        </div>
+        <div>
+            <h2><a href="./login.html">Mi cuenta</a></h2>
+            <a href="./registroPagina1.html">Regístrate</a>
+            <a href="./login.html">Inicia sesión</a>
+        </div>
+        <div>
+            <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
+            <a href="./TerminosCondiciones.html">Términos y condiciones</a>
+            <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
+        </div>
+    </footer>
+    <!-- Se importan los scripts de boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+        <script src="../javascript/AvisoPrivacidad.js"></script>
+</body>
+</html>

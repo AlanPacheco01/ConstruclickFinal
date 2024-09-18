@@ -1,0 +1,45 @@
+.body {
+    background-color: white;
+    box-sizing: border-box;
+    /* display: flex;
+    align-items: center; */
+    /* height: 100vh;  */
+    color: #735F46;
+
+}
+
+.form--container {
+
+    max-width: 784px;
+    background-color: white;
+    padding: 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d3c5b0;
+}
+
+.container--formularioPublicarServicio{
+    background-color: white;
+    padding-top: 200px;
+    padding-bottom: 88px;
+}
+
+.option{
+    color: #735F46;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.legend{
+    color:#735F46;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}

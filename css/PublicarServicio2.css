@@ -1,0 +1,64 @@
+.body {
+  box-sizing: border-box;
+  color: #735F46;
+  font-family: "Monserrat";
+ 
+}
+
+.form--container {
+  margin-top: 200px !important;
+  margin-bottom: 100px !important;
+  max-width: 784px;
+  background-color: white;
+  padding: 50px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d3c5b0;
+}
+.container--formularioPublicarServicio{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.option{
+  color: #735F46;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 !important;
+  color: darkred !important;
+  background-color: white !important;
+  border-style: none !important;
+  border: none !important;
+}
+
+
+/* Se agrega media query para que sea responsiva */
+
+ 
+@media (max-width: 700px) {
+  .form--container {
+    padding: 20px;
+    margin: 50px auto;
+    overflow-x: hidden; 
+    background-color: white;
+  }
+  
+.btn{
+  max-width: 100%;
+}  
+
+}

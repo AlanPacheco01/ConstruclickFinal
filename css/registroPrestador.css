@@ -1,0 +1,343 @@
+/* Definimos el tipo y tamaño de fuente */
+body{
+    font-family: "Montserrat";
+}
+.form-registroPrestador h1{
+    font-size: 58px;
+    color: #735f46;
+    line-height: 80px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+ 
+}
+.form-registroPrestador h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600; 
+    letter-spacing: 0.2px;
+    color: #735f46;
+}
+.form-registroPrestador h3{
+    font-size: 20px;
+    color: #735f46;
+    font-weight: 700; 
+    letter-spacing: 0.1px;
+    line-height: 32px;
+}
+/* Se define el estilo de los botones */
+
+.form-registroPrestador button{
+    background-color: #735f46;
+    color: white;
+    letter-spacing: 0.2px;
+    width: 200px;
+    height: 62px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    border: #735f46;
+    border-inline: 2px;
+    border-radius: 50px;
+    
+}
+.form-registroPrestador {
+    padding-bottom: 84px;
+}
+
+.container-form select{
+    background-color: white;
+    color: #D9D4CC;
+    font-family: "Montserrat";
+    height: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400; 
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid #D9D4CC;
+    border-right: 1px solid #D9D4CC;
+    border-left: 1px solid #D9D4CC;
+    border-top: 1px solid #D9D4CC;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+.container-form select:hover{
+
+	background: #bfbab0;
+    color: white;
+    font-family: "Montserrat";
+    -webkit-tap-highlight-color:#735F46;
+}
+
+
+.form-registroPrestador button:hover{
+    cursor: pointer;
+	background: #bfbab0;
+    border-bottom: 2px solid #D9D4CC;
+    border-right: 2px solid #D9D4CC;
+    border-left: 1px solid #D9D4CC;
+    border-top: 1px solid #D9D4CC;
+    color: #735f46;
+} 
+
+.alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    color: red !important;
+    background-color: white !important;
+    border-style: none !important;
+    border: none !important;
+}
+
+#registroPrestador--img--alert1{
+    position: relative;
+    top: 15px;
+    margin-right: 6px;
+}
+#registroPrestador--img--alert2{
+    position: relative;
+    top: 15px;
+    margin-right: 6px;
+}
+#registroPrestador--img--alert3{
+    position: relative;
+    top: 1px;
+    margin-right: 6px;
+}
+
+#registroPrestador--img--alert4{
+    position: relative;
+    top: 1px;
+    margin-right: 6px;
+}
+
+#registroPrestador--img--alert5{
+    position: relative;
+    top: 15px;
+    margin-right: 6px;
+}
+
+#registroPrestador--img--alert6{
+    position: relative;
+    top: 15px;
+    margin-right: 13px;
+}
+
+#registroPrestador--img--alert7{
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+
+#registroPrestador--img--alert{
+    color: green;
+    margin-right: 3px;
+}
+
+#saved--alert--message{
+    position: relative;
+    top: 1px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+    color: green;
+}
+
+#ine--alert--message{
+    position: relative;
+    top: 4px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+}
+
+#sentimos--alert--message{
+    position: relative;
+    top: 15px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+    text-align: justify;
+    width: 85%;
+}
+
+#telefono--alert--message{
+    position: relative;
+    top: 15px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+}
+
+#contrasena--alert--message{
+    position: relative;
+    top: 2px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+}
+
+#contrasenaCoincide--alert--message{
+    position: relative;
+    top: 2px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#correo--alert--message{
+    position: relative;
+    top: 16px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600;
+}
+#name--alert--message {
+    position: relative;
+    top: 16px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.form-registroPrestador li {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color:#8C7E6C;
+    list-style: none;
+    line-height: 20px;
+
+}
+
+.form-registroPrestador ul{
+    margin-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    max-width: 100%;
+}
+
+.container-form li{
+    margin:0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+    max-width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+
+.form-registroPrestador label{
+    margin:0%;
+    padding-left: 0%;
+    color: #BFBAB0;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.form-registroPrestador h2{ 
+    font-family: "Montserrat";
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600; 
+    letter-spacing: 0.2px;
+    color:#735F46;
+    text-align: center;
+    padding: 10% 0% 1% 0%;
+    max-width: 100%;
+}
+
+.container-form{
+    font-family: "Montserrat";
+    border-color: #8C7E6C;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    columns: 2;
+    padding: 2% 2% 2% 2%;
+    max-width: 100%;
+    display:inherit;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    
+
+.d-md-block button{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form--buttom2{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding-top: 0%;
+
+}
+
+.container-form button{
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    display:inline;
+    flex-direction:row;
+    align-items: center;
+
+}
+
+
+#saved--alert{
+    background-color: blue;
+}
+
+
+
+@media (max-width: 950px){
+
+    .form-registroPrestador h2{ 
+        display: list-item;
+        font-size: 30px;
+    }
+
+    .container-form{
+    padding: 10px;
+    columns: 1;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+
+
+
+    .form--buttom2 button{
+        margin-top: 10px;
+        padding-top: 0%;
+        width: 100%;
+        
+    }
+    .d-md-block button{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}

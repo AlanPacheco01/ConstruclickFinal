@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/GuiaDiseño.css"> <!-- Se cargan los diseños de la pagina principal -->
+    <link rel="stylesheet" href="../css/AcercaDeNosotros.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Acerca de nosotros</title>
+    <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
+</head>
+
+
+<body>
+  <header>
+    <!-- Aqui va a estar la navbar version web-->
+    <nav class="navBar--container" id="navBarWeb">
+        <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+      
+        <!-- Boton con menu desplegable y los otros botones-->
+        <div class="links--container">
+            <div class="dropdown">
+                <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Contrata
+                </button>
+                <ul type="none" class="dropdown-menu">
+                    <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                    <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                    <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                    <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                    <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                    <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                    <li><a class="item" href="./catalogo.html">Otros</a></li>
+                </ul>
+            </div>
+            <div>
+            <a href="./publicarServicio.html" class="buttonNavBar">Anúnciate</a>
+        </div>
+            <div>
+            <a href="./AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
+        </div>
+    </div>
+        <!-- Botones iniciar sesion y registrate -->
+        <div id="usuarios">
+            <a href="./login.html" class="buttonNavBar">Iniciar Sesión</a>
+            /
+            <a href="./registroPagina1.html" class="buttonNavBar">Regístrate</a>
+        
+
+        <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
+    
+        <!-- Barra de busqueda -->
+        <form action="" method="post" class="searchNavBar">
+            <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
+            <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
+        </form>
+        </div>
+    </div>
+</nav>
+
+    <!-- Aqui va a estar la navbar version movil -->
+    <nav class="navBar--container navbar" id="navBarMobile">
+        <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
+        <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+        <!-- Funcionalidad de la lupa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
+            <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
+        </button>
+        <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
+        <!-- Menu de hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
+            <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul type="none">
+                <li>
+                    <div class="dropdown">
+                        <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
+                            Contrata
+                        </button>
+                        <ul type="none" class="dropdown-menu">
+                            <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                            <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                            <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                            <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                            <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                            <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                            <li><a class="item" href="./catalogo.html">Otros</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="./html/publicarServicio.html" class="buttonNavBar item">Anúnciate</a>
+                </li>
+                <li>
+                    <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conócenos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="lupa">
+            <form action="" method="post" class="searchNavBar">
+                <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg"
+                        alt="Icono de una lupa"></button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<!-- Empieza primera parte de Acerca de nosotros -->
+    <section class="aboutUs">
+        <div class="aboutUs--container">
+            <div class="aboutUs--left">
+                <h1 class="aboutUs--header">Acerca de nosotros</h1>
+                <p class="aboutUs--buildFuture">Construye tu futuro con un click</p>
+                <button type="button" class="aboutUs--button" id="aboutUs--button">Encuentra tus servicios</button>
+            </div>
+            <div class="aboutUs--right">
+                <img class="aboutUs--person" src="../assets/acercaDeNosotrosImg/aboutUsintro2-removebg-preview 1.png" alt="">
+            </div>
+        </div>
+            <div class="aboutUs--card-container">
+                <p class="aboutUs--paragraph">En Construclick, entendemos la creciente demanda de servicios y materiales de alta calidad para el sector de la construcción en la Ciudad de México y su área metropolitana. Nuestro objetivo es simplificar la búsqueda y el contacto con contratistas especializados en áreas clave como albañilería, plomería, electricidad y proveedores de materiales.
+                </p>
+                <div class="aboutUs--cards">
+                    <div class="card">
+                        <p class="card--text">“Me ayudaron a construir mi futuro”</p>
+                        <div class="card--text-container">
+                            <div class="image--container">
+                                <img class="card--image" src="../assets/acercaDeNosotrosImg/caras1.jpeg" alt="">
+                            </div>
+                            <h3 class="card--header">Sergio</h3>
+                            <h3 class="card--footer">Usuario verificado</h3>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <p class="card--text">“Super profesionales, 10/10, sin duda usaré esta página cada que pueda”</p>
+                        <div class="card--text-container">
+                            <div class="image--container">
+                                <img class="card--image" src="../assets/acercaDeNosotrosImg/caras2.jpg" alt="">
+                            </div>
+                            <h3 class="card--header">Monse</h3>
+                            <h3 class="card--footer">Usuario verificado</h3>
+                        </div>
+                    </div>      
+                    <div class="card">
+                        <p class="card--text">“Me ayudaron a encontrar más clientes”</p>
+                        <div class="card--text-container">
+                            <div class="image--container">
+                                <img class="card--image" src="../assets/acercaDeNosotrosImg/caras3.jpg" alt="">
+                            </div>
+                            <h3 class="card--header">Lidia</h3>
+                            <h3 class="card--footer">Usuario verificado</h3>
+                        </div>
+                    </div>      
+                    <div class="card">
+                        <p class="card--text">“Encontré a los mejores proovedores para mi negocio”</p>
+                        <div class="card--text-container">
+                            <div class="image--container">
+                                <img class="card--image" src="../assets/acercaDeNosotrosImg/cara4.jpeg" alt="">
+                            </div>
+                            <h3 class="card--header">Juan Carlos</h3>
+                            <h3 class="card--footer">Usuario verificado</h3>
+                        </div>
+                    </div>           
+                </div>  
+                <p class="aboutUs--paragraph">Ofrecemos una plataforma intuitiva y eficiente que conecta a los usuarios con profesionales capacitados, garantizando la calidad y confianza en cada proyecto. Nos dirigimos a personas que buscan asegurar la excelencia en los servicios de construcción y reparación, así como a distribuidores de materiales y herramientas que desean expandir su alcance y conectar con nuevos proveedores especializados. En Construclick, facilitamos el camino hacia la construcción de tus sueños, con los mejores profesionales y materiales al alcance de un click.</p>
+        </div>
+    </section>
+    <!-- Termina primera parte de Acerca de nosotros -->
+    <!--Empieza Valores, mision y vision-->
+    <main class="aboutUs--container2">
+        <div>
+            <h2 id="ourValues">
+                Nuestros Valores
+            </h2>
+            <section class="values">
+                <div id="card--values">
+                    <img src="../assets/acercaDeNosotrosImg/responsability.png" id="image">
+                    <p>
+                        Responsabilidad
+                    </p> 
+                    
+                </div>
+                <div id="card--values">
+                    <img src="../assets/acercaDeNosotrosImg/colaboracion.webp" id="image">
+                    <p>
+                        Colaboración
+                    </p>                    
+                </div>
+                <div id="card--values">
+                    <img src="../assets/acercaDeNosotrosImg/inclusion.jpg" id="image">
+                    <p>
+                        Inclusión
+                    </p>
+                </div>
+            </section>
+            <section class="misionVision">
+                <div id="mv--container">
+                    <h2 id="vm">
+                        Visión
+                    </h2>
+                    <br>
+                    <p>
+                        Proveer una plataforma segura para el sector de la construcción, ofreciendo servicios y materiales de alta calidad y trazabilidad. Buscamos establecer nuevos estándares de excelencia e impulsar un cambio positivo en la sociedad, fomentando la inclusión en la industria.
+                    </p>
+                </div>
+                <div id="mv--container" >
+                    <h2 id="vm">
+                        Misión
+                    </h2>
+                    <br>
+                    <p id>
+                        Crear una plataforma accesible y práctica para profesionales y clientes del sector de la construcción que buscan servicios de alta calidad.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--Acaba Valores, mision y vision-->
+    <!--Empieza seccion de colaboradores-->
+    <div class="container--colaboradores">
+    <section class="row section--About" id="Collaborators">
+        <h2 class="text-center fw-bold" id="colaboradores-title" style="margin-top: 20px; margin-bottom: 20px; font-size: 50px; letter-spacing: 1px;">Colaboradores</h2>
+        <!-- Ricardo Jovani -->
+        <div class="card flex-row sideCard" id="ricardo">
+          <img src="../assets/Jovani.jpg" class="card-img-left" alt="Colaborador Jovani">
+          <div class="card-body">
+            <h4 class="card-title color2">Ricardo Jovani Fonseca Castillo</h4>
+            <p class="card-text"> Apasionado del desarrollo web, enfocado en la solución e implementación de recursos accesibles para el público en general.
+            </p>
+            <div class="logo--container">
+              <a href="https://www.linkedin.com/in/ricardo-jovani-fonseca-castillo/" target="_blank">
+            <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+          </a>
+          <a href="https://github.com/DaAlba29" target="_blank">
+            <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+          </a>
+          </div>
+          </div>
+        </div>
+        <!-- Monica Jasso -->
+        <div class="card  flex-row centerCard" id="monica">
+          <img src="../assets/Monica.jpg" class="card-img-left" alt="Colaboradora Moni">
+          <div class="card-body">
+            <h4 class="card-title color2">Monica Gabriela Jasso Rosales</h4>
+            <p class="card-text">Me muevo entre flujos conversacionales, asistentes virtuales y arquitectura e integración
+              de servicios para el sector Financiero y de Seguros.</p>
+              <div class="logo--container">
+                <a href="https://www.linkedin.com/in/monica-jassor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                  <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+                </a>
+                <a href="https://github.com/trecem" target="_blank">
+                  <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+                </a>
+              </div>
+          </div>
+        </div>
+        <!-- Claudia Miriam Medina Duran  -->
+        <div class="card flex-row sideCard" id="claudia">
+          <img src="../assets/Claudia.jpg" class="card-img-left" alt="Colaboradora Claudia">
+          <div class="card-body">
+            <h4 class="card-title color2">Claudia Miriam Medina Duran </h4>
+            <p class="card-text"> Me apasiona trabajar en equipos multidisciplinarios, siempre en constante aprendizaje.
+            </p>
+            <div class="logo--container">
+              <a href="http://www.linkedin.com/in/cmiriam-medinad" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/cMiriam-Medina" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Miguel Angel -->
+        <div class="card  flex-row sideCardMiddle" id="miguel">
+          <img src="../assets/Miguel.jpg" class="card-img-left" alt="Colaborador Miguel">
+          <div class="card-body">
+            <h4 class="card-title color2">Miguel Angel Castillo</h4>
+            <p class="card-text"> Desarrollo soluciones tecnológicas innovadoras y efectivas, adaptándome a los cambios constantes del sector para ofrecer resultados óptimos y accesibles.
+            </p>
+            <div class="logo--container">
+              <a href="https://www.linkedin.com/in/tecangelcastillo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/baitolotus" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+         <!-- Alan Alberto -->
+         <div class="card  flex-row centerCard" id="alan">
+          <img src="../assets/Alan.jpg" class="card-img-left" alt="Colaborador Alan">
+          <div class="card-body">
+            <h4 class="card-title color2">Alan Alberto Pacheco Ramírez</h4>
+            <p class="card-text"> Hago posible la implementación de soluciones eficientes, asequibles y novedosas para una industria en constante desarrollo.</p>
+            <div class="logo--container">
+              <a href="https://www.linkedin.com/in/aapr250495/" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/AlanPacheco01" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Pedro Abraham -->
+        <div class="card  flex-row sideCardMiddle" id="Abraham">
+          <img src="../assets/Abraham.jpg" class="card-img-left" alt="Colaborador Abraham">
+          <div class="card-body">
+            <h4 class="card-title color2">Pedro Abraham Hidalgo Aguilar</h4>
+            <p class="card-text"> Autodidacta y proactivo, siempre en busca de nuevas oportunidades para mejorar y crecer.
+            </p>
+            <div class="logo--container">
+              <a href="https://www.linkedin.com/in/pedroabrahamhidalgo/" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/Abraham6532?tab=repositories" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Juan Pablo -->
+        <div class="card  flex-row sideCardMiddle" id="pablo">
+          <img src="../assets/Pablo.jpg" class="card-img-left" alt="Colaborador Pablo">
+          <div class="card-body">
+            <h4 class="card-title color2">Juan Pablo Ortega</h4>
+            <p class="card-text"> Desarrollador Java interesado en el Back End y la Inteligencia Artificial. Formación elemental para el trabajo en la rama informática.
+            </p>
+            <div class="logo--container">
+              <a href="https://www.linkedin.com/in/pabloo-ramirezz/" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/pablooagm" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Damián Campos -->
+        <div class="card  flex-row centerCard" id="damian">
+          <img src="../assets/Damian.jpg" class="card-img-left" alt="Colaborador Damián">
+          <div class="card-body">
+            <h4 class="card-title color2">Damián Campos</h4>
+            <p class="card-text"> Desarrollador web, amante de la tecnología y apasionado a la IT.
+            </p>
+            <div class="logo--container">
+              <a href="http://www.linkedin.com/in/gerardo-dami%C3%A1n-campos-gasc%C3%B3n-" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/Dami-Campos" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Erik Gabriel -->
+        <div class="card  flex-row sideCardMiddle" id="gabriel">
+          <img src="../assets/Gabriel.jpg" class="card-img-left" alt="Colaborador Gabriel">
+          <div class="card-body">
+            <h4 class="card-title color2">Erik Gabriel Méndez</h4>
+            <p class="card-text"> Innovador, concreto en sus objetivos, apasionado de los pequeños detalles de la vida. Técnico en telecomunicaciones y entusiasta en la arquitectura de software.
+            </p>
+            <div class="logo--container">
+              <a href="https://www.linkedin.com/in/erik-m%C3%A9ndez07?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/erik012396" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Pedro Sebastian -->
+        <div class="card  flex-row centerCardEnd" id="sebastian">
+          <img src="../assets/Sebastian.jpg" class="card-img-left" alt="Colaborador Sebastian">
+          <div class="card-body">
+            <h4 class="card-title color2">Pedro Sebastián Frías Martínez</h4>
+            <p class="card-text"> Apasionado de la programación y las finanzas, emprendedor con formación en Ingeniería. Siempre abierto al aprendizaje constante.
+            </p>
+            <div class="logo--container">
+              <a href="https://www.linkedin.com/in/pedro-sebastian-frias-mtz/" target="_blank">
+                <img src="../assets/LogoLinkedin.webp" alt="Logo de linkdedin" class="logo">
+              </a>
+              <a href="https://github.com/Sebfria" target="_blank">
+                <img src="../assets/LogoGitHub.webp" alt="Logo de git hub" class="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+      <!--Termina seccion de colaboradores-->
+      <!--Empieza ultima parte de acerca de nosotros-->
+      <div class="container">
+        <div class="text-section">
+            <h5>Publica tus servicios</h5>
+            <h2>Es tu turno de crecer</h2>
+            <p>ConstruClick te acerca a clientes comprometidos que esperan un servicio de calidad.</p>
+            <button type="button" class="aboutUs--button" id="aboutUs--button2">Unete a nosotr@s</button>
+        </div>
+        <div class="image-section">
+            <img src="../assets/acercaDeNosotrosImg/imgPlanosDiv.jpg" alt="Descripción de la imagen" sizes="(max-width: 900px) 300px, (max-width: 600px) 250px,
+            800px">
+        </div>
+    </div>
+    <!--Termina ultima parte de acerca de nosotros-->
+ 
+
+
+    <!-- Aqui va a estar el footer -->
+    <footer>
+      <div>
+          <h2><a href="./contacto.html">Contacto</a></h2>
+          <a href="mailto:service@construclick.com">service@construclick.com</a>
+          <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
+          <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
+          <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
+      </div>
+      <div>
+          <h2><a href="./catalogo.html">Catálogo</a></h2>
+          <a href="./Contratar_Servicio.html">Contrata</a>
+          <a href="./publicarServicio.html">Anúnciate</a>
+      </div>
+      <div>
+          <h2><a href="./login.html">Mi cuenta</a></h2>
+          <a href="./registroPagina1.html">Regístrate</a>
+          <a href="./login.html">Inicia sesión</a>
+      </div>
+      <div>
+          <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
+          <a href="./TerminosCondiciones.html">Términos y condiciones</a>
+          <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
+      </div>
+  </footer>
+  <!-- Se importan los scripts de boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
+  <script src="../javascript/AcercaDeNosotros.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+.container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
+
+.catalogo--container{
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.catalogo--image{
+    max-width: 300px !important;
+}
+
+.img{
+    max-width: 280px !important;
+    height: 300px;
+}
+
+
+.catalogo--information{
+    max-width:  335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.catalogo--title{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.2px;
+text-align: center;
+margin-top: 2px;
+margin-bottom: 0;
+color: #8C7E6C;
+}
+
+.catalogo--paragraph{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #bfbab0;;
+margin-top: 0;
+max-width: 262px;
+text-align: center;
+}
+
+.catalogo--price{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+text-align: left;
+letter-spacing: 0.1px;
+color:  #735f46;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.catalogo--buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.catalogo--options{
+width: 148px;
+height: 44px;
+color: white;
+background-color: #735F46;
+border: none;
+box-shadow: none;
+border-radius: 5px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.2px;
+}
+
+.catalogo--options:hover{
+    opacity: 0.7;
+}
+
+.button--container{
+    width: 40px;
+    height: 40px;
+    background-color: #E8E8E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button--container:hover{
+    opacity: 0.7;
+}
+
+.butto--heart{
+    width: 17.5px;
+    height: 15.6px;
+}
+
+.butto--heart:hover{
+    cursor: pointer;
+}
+
+
+.butto--eye{
+    width: 17.5px;
+    height: 15.6px;
+}
+
+
+.butto--eye{
+    width: 17.5px;
+    height: 15.6px;
+}
+
+.catalogo--container:hover {
+    transform: scale(1.05); 
+}
+
+@media only screen and (max-width: 1100px) {
+ .container {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .catalogo--container{
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px; 
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-title{
+    margin: 0 auto;
+    font-family: 'Montserrat';
+font-style: normal;
+color: #735f46;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.2px;
+}

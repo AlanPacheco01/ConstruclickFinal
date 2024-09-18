@@ -1,0 +1,114 @@
+/* Importamos la fuente Monserrat de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.panelSuperior p{
+    font-size: 18px;
+    color: #8c7e6c;
+    font-weight: 500; 
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+.panelSuperior{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+.imagenes{
+    width: 510px;
+    height: 450px;
+}
+.items--container{
+    width: 410px;
+    margin-left: 10px;
+}
+#titulo{
+
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600; 
+    letter-spacing: 0.2px;
+    color: var(--pot);
+}
+
+#descripcion{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500; 
+    letter-spacing: 0.1px;
+    color: var(--pot);
+}
+
+.reseñas{
+    display: flex;
+    align-items: flex-start;
+    width: 220px;
+    justify-content: space-between;
+}
+.button{
+    background-color: var(--pot);
+    color: white;
+    letter-spacing: 0.2px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    border: #735f46;
+    border-inline: 2px;
+}
+
+.preguntasRespuestas{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.preguntas{
+    width: 75%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.panelInferior{
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+.panelInferior p{
+    font-weight: 500;
+    text-align: justify;
+}
+
+.opiniones{
+    display: flex;
+}
+.container--opinion{
+    display: grid;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .imagenes{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 15px;
+    }
+    .panelCentral{
+        text-align: center;
+    }
+    .preguntasRespuestas{
+        margin-top: 10px;
+    }
+    .button{
+        width: 130px;
+        font-size: initial;
+    }
+    .preguntas{
+        width: 280px;
+    }
+    
+}
+
+
+

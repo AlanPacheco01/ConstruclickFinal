@@ -1,0 +1,228 @@
+/* Importamos la fuente Monserrat de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definimos la paleta de colores */
+:root {
+    --shell: #f2f2f2;
+    /* Cascaron */
+    --smoke: #bfbab0;
+    /* Humo */
+    --cement: #d9d4cc;
+    /* Cemento */
+    --pot: #735f46;
+    /* Cazuela */
+    --sand: #8C7E6C;
+    /* Arena */
+}
+
+body {
+    font-family: "Montserrat";
+    color: #735f46;
+}
+.profileContainer{
+    justify-content: center;
+}
+.profileSugestions{
+    width: 270px;
+}
+#slideUno,
+#slideDos,
+#slideTres {
+    width: 270px !important;
+    height: 300px;
+    border: 2px solid rgb(194, 193, 193);
+    border-radius: 7px;
+}
+.destacado img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(194, 193, 193);
+    border-radius: 7px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#novedades{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#infoUno,
+#infoDos,
+#infoTres {
+    background-color: #f2f2f2;
+    color: #735f46;
+    border: none;
+    border-radius: 7px;
+    opacity: 92%;
+    border: 2px solid white;
+    height: 100px;
+}
+
+#infoUno h5,
+#infoDos h5,
+#infoTres h5 {
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+}
+
+#infoUno p,
+#infoDos p,
+#infoTres p {
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+    font-weight: 500;
+}
+
+.destacado {
+    background-color: rgb(255, 253, 253);
+    width: 250px;
+    height: 430px;
+    align-items: center;
+    padding-top: 15px;
+    border: 1px solid gainsboro;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 1px 2px #8C7E6C;
+}
+
+.destacado img:hover{
+    transition: all 2s ease;
+    transform: rotateY(180deg);
+    opacity: 0%;
+}
+.profilePost{
+    width: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#postContent{
+    width: 700px;
+    border: 1px solid #735f46;
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px #735f46;
+}
+.construPost button{
+    position: relative;
+    left: 570px;
+    background-color: #735f46;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    width: 130px;
+    font-weight: 600;
+}
+.profileBadges{
+    width: 300px;
+    text-align: center;
+    color: #735f46;
+    background-color: rgba(255, 255, 255, 0.952);
+    border: 2px solid #735f46;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px #735f46;
+}
+.profileBadges ul{
+display: flex;
+flex-direction: row;
+list-style: none;
+}
+.primeraSeccion img, .segundaSeccion img{
+width: 65px;
+opacity: 10%;
+}
+#medallaUsuarioNuevo{
+    opacity: 100%;
+}
+#medallaUsuarioNuevo:hover{
+transform: scale(2.5);
+}
+#medallaTrabajo{
+    border-radius: 100%;
+}
+.construTips{
+    font-size: 15px;
+    font-style: italic;
+}
+.postItem{
+    width: 700px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    border: 1px solid #554735;
+    border-radius: 5px;
+}
+.postItem button{
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 0.5px solid gainsboro;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f2f2f2;
+    color: #554735;
+    position: relative;
+    top: 50px;
+}
+.postText{
+    font-family: "Montserrat";
+    color: #735f46;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 650px;
+    text-align: justify;
+}
+.heartButton:hover{
+color: whitesmoke;
+background-color: darkred;
+transform: scale(1.2);
+}
+.comenta:hover{
+    color: white;
+    background-color: darkblue;
+    transform: scale(1.2);
+}
+
+.comparte:hover{
+    color: white;
+    background-color: darkgreen;
+    transform: scale(1.2);
+}
+
+.resenaDestacado{
+    width: 200px;
+    position:absolute;
+}
+
+.resenaDestacado p{
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 600;
+    font-style:oblique;
+}
+.descripcionLogro{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: oblique;
+    background-color: white;
+    border: 1px solid #554735;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px #554735;
+    width: 200px;
+    position: absolute;
+    cursor: url("cursorPala.cur") !important;
+}
+#constructorDestacado{
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.noticiaUno{
+    font-size: 10px !important;
+}
