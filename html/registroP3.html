@@ -58,7 +58,7 @@
             <!-- Barra de busqueda -->
             <form action="" method="post" class="searchNavBar">
                 <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
-                <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
+                <input type="search" name="" id="navbar2" placeholder="Search" class="searchNavBar" style="width: 300px;">
             </form>
             </div>
         </div>
@@ -108,7 +108,7 @@
             </div>
             <div class="collapse navbar-collapse" id="lupa">
                 <form action="" method="post" class="searchNavBar">
-                    <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                    <input type="search" name="" id="navabar" placeholder="Search" class="searchNavBar" style="width: 90%;">
                     <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg"
                             alt="Icono de una lupa"></button>
                 </form>
@@ -120,12 +120,13 @@
     
 <!-- Seccion formulario-->
 
-<section class="form-registroPrestador" id="form-registroPrestador">
+<section   class="form-registroPrestador" id="RegistroPrestador">
+    
      <!-- Sección del header -->
   <header>
     <h2>Contratar servicio</h2>
   </header>
-        <form class="container-form" id="RegistroPrestador">
+        <form   class="container-form" >
          
             <ul class="form-list">
                 <li class="input-nombre">Nombre                   
@@ -133,7 +134,7 @@
                         <input type="text" class="form-control"
                             autocomplete="name"
                             name="Nombre"
-                            placeholder="Escribe tu nombre completo" id="userName">
+                            placeholder="Escribe tu nombre completo" id="username">
                     </label>
                     <div class="alert alert-danger" id="name--alert" hidden role="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
@@ -151,7 +152,7 @@
                     <input type="file" id="fotoperfil" accept="image/png, image/jpeg"/> </label>
                 </li>
 
-                <li class="input-correo" id="userEmail">Correo
+                <li class="input-correo" id="userEmaillista">Correo
                     <label>Ej. juan_p123@correo.com
                     <input type="email" class="form-control" id="userEmail" autocomplete="email"
                             placeholder="Escribe tu correo electrónico">
@@ -169,7 +170,7 @@
 
                 <li class="input-contraseña">Contraseña                    
                     <label>min. 8 caracteres, un dígito, un símbolo y una mayúscula
-                        <input type="password" class="form-control" id="contraseña" autocomplete="new-password"
+                        <input type="password" class="form-control" id="contrasena" autocomplete="new-password"
                         placeholder="Ingrese su contraseña">
                     </label>
                     <div class="alert alert-danger" hidden id="password--alert" role="alert">
@@ -184,7 +185,7 @@
                 </li>
 
                 <li class="input-confirmarContraseña">Confirmar contraseña                        
-                        <input type="password" class="form-control" id="confirmaContraseña" autocomplete="new-password"
+                        <input type="password" class="form-control" id="confirmacontrasena" autocomplete="new-password"
                         placeholder="Ingresa nuevamente tu contraseña">
                 </li>
                 <div class="alert alert-danger" hidden id="password2--alert" role="alert">
@@ -199,7 +200,7 @@
             </ul>
 
             <ul>
-                <li class="input-tel" id="userPhone">Teléfono                  
+                <li class="input-tel" id="userPhonelista">Teléfono                  
                     <label>Número a 10 dígitos
                     <input type="text" class="form-control" id="userPhone" placeholder="55 XX XX XX XX">
                     </label>
@@ -229,7 +230,7 @@
                        
 
                     <label for="formFile" class="form--buttom">Al seleccionar 'Si' te comprometes a ofrecer tu trabajo en estas zonas</label>
-                    <select name="placeOption" id="placeOption" onChange="seleccionarOpcion()">
+                    <select name="placeOption1" id="placeOption" onChange="seleccionarOpcion()">
                         <option value="">---</option>
                         <option value="si">Si</option>
                         <option value="no">No</option>
@@ -256,12 +257,17 @@
                                 Información guardada! 
                             </div>
                         </div> 
-                        <button class="send--info" type="submit" id="send--form">¡Listo!</button>
+                        <button class="send--info" type="submit" value="enviar" id="send--form">¡Listo!</button>
                 </li>
             </ul>
             </form>
             <br> <br>
+            <div id="login-message" hidden>
+                <p>Por favor <a href="./login.html">inicia sesión</a> para continuar.</p>
+            </div>
+        
     </section>
+
 <!-- Aqui va a estar el footer -->
 <footer>
     <div>
@@ -288,16 +294,15 @@
     </div>
 </footer>
 
-    <script src="../javascript/registroPrestador.js"></script>
-    <!--Bootstrap para diseno formulario-->   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!--Bootstrap para ocultar las alertas-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    
     <!--Bootstrap para navbar y footer-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"  crossorigin="anonymous"></script>
+ 
+     <script src="../javascript/pruebasregistro.js"></script>
+    
+     </script>
 </body>
 
 </html>
+
