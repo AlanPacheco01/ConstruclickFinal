@@ -1,88 +1,73 @@
-//alerta de bootstrap, atributo "hidden = true" por defecto 
+const mostrarInfo = document.getElementById('recuperar');
 
-const welcomeUser = document.getElementById("welcomeUser");
-welcomeUser.hidden = true;
-const wrongMail = document.getElementById("wrongMail--alert");
-wrongMail.hidden = true;
-const wrongPassword = document.getElementById("wrongPassword--alert");
-wrongPassword.hidden = true;
-const unexistingUser =document.getElementById("unexistingUser--alert");
-unexistingUser.hidden=true;
+mostrarInfo.addEventListener('click', (event) => {
+    event.preventDefault(); // Evitar el comportamiento predeterminado
 
-//información del formulario 
-const loginForm = document.getElementById("form--publication");
-
-//evento de inicio de sesión
-loginForm.addEventListener('submit', (evt) => {
-    evt.preventDefault();
-
-    // lectura de los datos del formulario 
-    const email = document.getElementById('emailUser').value;
+    // Obtener valores del formulario
+    const correoElectronico = document.getElementById('emailUser').value;
     const password = document.getElementById('passwordUser').value;
 
-    //validación de la información
+    // Alertas ocultas por defecto
+    const welcomeUser = document.getElementById("welcomeUser");
+    welcomeUser.hidden = true;
+
+    const wrongMail = document.getElementById("wrongMail--alert");
+    wrongMail.hidden = true;
+
+    const wrongPassword = document.getElementById("wrongPassword--alert");
+    wrongPassword.hidden = true;
+
+    const unexistingUser = document.getElementById("unexistingUser--alert");
+    unexistingUser.hidden = true;
+
+    // Información del formulario
+    const loginForm = document.getElementById("form--publication");
+
+    // Validación de correo electrónico
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(correoElectronico)) {
         wrongMail.hidden = false;
-        loginForm.reset();
-        setTimeout(()=>{
-            wrongMail.hidden=true;
-        },4500)
+        setTimeout(() => { wrongMail.hidden = true; }, 4500);
         return;
-    }else{
-        unexistingUser.hidden = true;
-        loginForm.reset();
     }
-    //validación de la información contraseña
+
+    // Validación de la contraseña
     const passwordRegex = /^[a-zA-Z0-9!@#$%&*_+¿? -]{6,}$/; // Al menos 6 caracteres
-if (!passwordRegex.test(password)) {
-    wrongPassword.hidden = false;
-    loginForm.reset();
-    setTimeout(() => {
-        wrongPassword.hidden = true;
-    }, 4500);
-    return;
-}else{
-        unexistingUser.hidden = true;
-        loginForm.reset();
+    if (!passwordRegex.test(password)) {
+        wrongPassword.hidden = false;
+        setTimeout(() => { wrongPassword.hidden = true; }, 4500);
+        return;
     }
 
-    // Obtener los valores del localStorage
-    const getEmail = 'j@gmail.com';
-    const getPassword = 'galleta';
+    // Fetch para verificar si el correo está en la base de datos
+    const url = `http://localhost:8080/contractarServicio/r2/construclick2/email?construemail=${correoElectronico}`;
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Usuario no encontrado"); // Si no existe el correo
+            }
+            return response.json(); // Convertir a JSON si la respuesta es correcta
+        })
+        .then(data => {
+            // Validar si la contraseña coincide
+            if (data.password === password) {
+                welcomeUser.hidden = false; // Mostrar mensaje de bienvenida
+                setTimeout(() => {
+                    window.location.href = "../index.html"; // Redirigir a la página principal
+                }, 3000);
+            } else {
+                wrongPassword.hidden = false; // Mostrar alerta de contraseña incorrecta
+                setTimeout(() => { wrongPassword.hidden = true; }, 4500);
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            unexistingUser.hidden = false; // Mostrar alerta de usuario no existente
+            setTimeout(() => { unexistingUser.hidden = true; }, 4500);
+        });
 
-    // Validación de los campos de entrada 
-    if (!emailRegex.test(email)) {
-        wrongMail.hidden = false;
-        setTimeout(() => {
-            wrongMail.hidden = true;
-        }, 4500);
-    } else if (!passwordRegex.test(password)) {
-        // Validación de la contraseña
-        wrongPassword.hidden = false;
-        setTimeout(() => {
-            wrongPassword.hidden = true;
-        }, 4500);
-    } 
-    
-        // validación del usuario 
+    loginForm.reset(); // Reiniciar el formulario
+});
 
-        if (email === getEmail && password === getPassword) {
-            welcomeUser.hidden = false;
-            unexistingUser.hidden = true;
-            loginForm.hidden = true;
-            setTimeout(() => {
-                window.location.href = "./perfil.html";
-            }, 3000);
-        } else {
-            unexistingUser.hidden = false;
-            setTimeout(() => {
-                unexistingUser.hidden = true;
-            }, 4500);
-            return;
-        }
-        loginForm.reset(); 
-    
-})
 
 
