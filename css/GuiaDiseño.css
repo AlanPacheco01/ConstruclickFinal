@@ -462,22 +462,101 @@ nav span:hover {
     font-weight: 500;
 }
 
-.profileContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 60px;
-    margin-left: 20px;
-}
-
-.profileSugestions {
-    width: 350px;
-    text-align: center;
-    border-right: 3px solid #735f46;
-    padding-right: 30px;
-    color: #735f46;
-}
-
-.profileSugestions p {
-    text-align: justify;
-    font-size: 15px;
+@media (max-width:900px ){
+    nav {
+        display: flex;
+        flex-direction: row;
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 20px !important;
+        color: var(--pot);
+        max-width: 100%;
+        height: 100px;
+        box-shadow: 0px 2px 2px rgb(224, 224, 224);
+        margin-bottom: 50px;
+    }
+    
+    nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navLogo {
+        width: 7%;
+        margin-right: 10px;
+    }
+    
+    .navSearch {
+        width: 23%;
+    }
+    
+    .navSearch input {
+        width: 80%;
+        background-color: #f2f2f2;
+        border: none;
+        margin-left: -10px;
+        border-radius: 5px;
+    }
+    
+    #navSearchButton {
+        background-color: #f2f2f2;
+        border: none;
+        margin: none;
+        border-radius: 5px;
+        margin-right: -2px;
+    }
+    
+    .navHouse, .navSocial, .navWorks, .navOrders {
+        display:none;
+    }  
+    
+    .navChat {
+        width: 24%;
+    }
+    
+    .navBell {
+        width: 23%;
+    }
+    
+    .navProfile {
+        width: 23%;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: var(--pot);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav span {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    nav span:hover {
+        font-size: 20px;
+    }
+    
+    #logoConstruclick {
+        width: 70px;
+    }
+    
+    .navProfile button {
+        background: none;
+        border: none;
+        color: #735f46;
+        width: fit-content;
+    }
+    
+    .navProfile button:hover {
+        background-color: #735f46;
+        color: white;
+    }
+    
+    .navProfile a {
+        color: #735f46 !important;
+        font-weight: 500;
+    }
 }

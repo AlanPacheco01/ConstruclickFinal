@@ -19,12 +19,28 @@ body {
     font-family: "Montserrat";
     color: #735f46;
 }
-.profileContainer{
+
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    margin-left: 20px;
     justify-content: center;
 }
-.profileSugestions{
+
+.profileSugestions {
     width: 270px;
+    text-align: center;
+    border-right: 3px solid #735f46;
+    padding-right: 30px;
+    color: #735f46;
 }
+
+.profileSugestions p {
+    text-align: justify;
+    font-size: 15px;
+}
+
 #slideUno,
 #slideDos,
 #slideTres {
@@ -33,7 +49,8 @@ body {
     border: 2px solid rgb(194, 193, 193);
     border-radius: 7px;
 }
-.destacado img{
+
+.destacado img {
     width: 200px;
     height: 200px;
     border: 2px solid rgb(194, 193, 193);
@@ -41,7 +58,8 @@ body {
     margin-top: 30px;
     margin-bottom: 40px;
 }
-#novedades{
+
+#novedades {
     font-size: 16px;
     font-weight: 600;
 }
@@ -90,23 +108,26 @@ body {
     box-shadow: 1px 2px #8C7E6C;
 }
 
-.destacado img:hover{
+.destacado img:hover {
     transition: all 2s ease;
     transform: rotateY(180deg);
     opacity: 0%;
 }
-.profilePost{
+
+.profilePost {
     width: 700px;
     margin-left: 20px;
     margin-right: 20px;
 }
-#postContent{
+
+#postContent {
     width: 700px;
     border: 1px solid #735f46;
     border-radius: 5px;
     box-shadow: 2px 1px 3px #735f46;
 }
-.construPost button{
+
+.construPost button {
     position: relative;
     left: 570px;
     background-color: #735f46;
@@ -116,8 +137,9 @@ body {
     width: 130px;
     font-weight: 600;
 }
-.profileBadges{
-    width: 300px;
+
+.profileBadges {
+    width: 250px;
     text-align: center;
     color: #735f46;
     background-color: rgba(255, 255, 255, 0.952);
@@ -125,29 +147,37 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 1px #735f46;
 }
-.profileBadges ul{
-display: flex;
-flex-direction: row;
-list-style: none;
+
+.profileBadges ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
-.primeraSeccion img, .segundaSeccion img{
-width: 65px;
-opacity: 10%;
+
+.primeraSeccion img,
+.segundaSeccion img {
+    width: 65px;
+    opacity: 10%;
 }
-#medallaUsuarioNuevo{
+
+#medallaUsuarioNuevo {
     opacity: 100%;
 }
-#medallaUsuarioNuevo:hover{
-transform: scale(2.5);
+
+#medallaUsuarioNuevo:hover {
+    transform: scale(2.5);
 }
-#medallaTrabajo{
+
+#medallaTrabajo {
     border-radius: 100%;
 }
-.construTips{
+
+.construTips {
     font-size: 15px;
     font-style: italic;
 }
-.postItem{
+
+.postItem {
     width: 700px;
     height: 100px;
     align-items: center;
@@ -156,7 +186,8 @@ transform: scale(2.5);
     border: 1px solid #554735;
     border-radius: 5px;
 }
-.postItem button{
+
+.postItem button {
     height: 50px;
     width: 150px;
     margin-right: 10px;
@@ -170,7 +201,8 @@ transform: scale(2.5);
     position: relative;
     top: 50px;
 }
-.postText{
+
+.postText {
     font-family: "Montserrat";
     color: #735f46;
     margin-top: 10px;
@@ -178,35 +210,38 @@ transform: scale(2.5);
     width: 650px;
     text-align: justify;
 }
-.heartButton:hover{
-color: whitesmoke;
-background-color: darkred;
-transform: scale(1.2);
+
+.heartButton:hover {
+    color: whitesmoke;
+    background-color: darkred;
+    transform: scale(1.2);
 }
-.comenta:hover{
+
+.comenta:hover {
     color: white;
     background-color: darkblue;
     transform: scale(1.2);
 }
 
-.comparte:hover{
+.comparte:hover {
     color: white;
     background-color: darkgreen;
     transform: scale(1.2);
 }
 
-.resenaDestacado{
+.resenaDestacado {
     width: 200px;
-    position:absolute;
+    position: absolute;
 }
 
-.resenaDestacado p{
+.resenaDestacado p {
     font-family: "Montserrat";
     font-size: 15px;
     font-weight: 600;
-    font-style:oblique;
+    font-style: oblique;
 }
-.descripcionLogro{
+
+.descripcionLogro {
     font-family: "Montserrat";
     font-weight: 600;
     font-style: oblique;
@@ -216,13 +251,75 @@ transform: scale(1.2);
     box-shadow: 2px 2px 5px #554735;
     width: 200px;
     position: absolute;
-    cursor: url("cursorPala.cur") !important;
 }
-#constructorDestacado{
+
+#constructorDestacado {
     font-size: 18px;
     font-weight: 650;
 }
 
-.noticiaUno{
+.noticiaUno {
     font-size: 10px !important;
+}
+
+.movileSugestions{
+    display: none;
+}
+
+
+@media (max-width:900px) {
+    
+.profileContainer{
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+    .profilePost, .construPost, #postContent, .postItem {
+        width:450px;
+    }
+    .construPost button {
+        position: relative;
+        left: 320px;
+        background-color: #735f46;
+        border-radius: 5px;
+        color: white;
+        height: 50px;
+        width: 130px;
+        font-weight: 600;
+    }
+
+    .profileBadges, .profileSugestions{
+        display: none;
+    }
+   
+    .movileSugestions{
+        display:flex;
+        flex-direction: column;
+        font-family: "Montserrat";
+        color: #554735;
+        text-align: center;
+    }
+    .movileSugestions p{
+        font-style: oblique;
+        font-size: 17px;
+    }
+    .movileSugestions h5{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .postItem button {
+        height: 40px;
+        width: 120px;
+        margin-right: 10px;
+        border-radius: 8px;
+        border: 0.5px solid gainsboro;
+        font-family: "Montserrat";
+        font-size: 17px;
+        font-weight: 600;
+        background-color: #f2f2f2;
+        color: #554735;
+        position: relative;
+        top: 50px;
+    }
 }
