@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Construclik
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/construclick
+    username: root
+    password: 'Mehe9601234m7@'
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect 
+    hibernate:
+      
+      ddl-auto: update
+      #ddl-auto:update
