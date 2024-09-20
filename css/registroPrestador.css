@@ -2,6 +2,13 @@
 body{
     font-family: "Montserrat";
 }
+header h2{
+    padding-top: 15px !important;
+}
+.form-registroPrestador{
+    max-height:  100%;
+}
+
 .form-registroPrestador h1{
     font-size: 58px;
     color: #735f46;
@@ -41,7 +48,8 @@ body{
     
 }
 .form-registroPrestador {
-    padding-bottom: 84px;
+    padding: 30px;
+    max-height: 660px;
 }
 
 .container-form select{
@@ -62,6 +70,7 @@ body{
     text-align: center;
     display: inline-block;
     max-width: 100%;
+    
 }
 
 
@@ -265,17 +274,22 @@ body{
 }
 
 .container-form{
+    margin-bottom: 30px !important;
     font-family: "Montserrat";
     border-color: #8C7E6C;
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 0 auto;
     columns: 2;
     padding: 2% 2% 2% 2%;
-    max-width: 100%;
-    display:inherit;
+    max-width: 836px;
+   
+  
+    
+    
+
+    /*display:inherit;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
     
@@ -298,7 +312,7 @@ body{
 .container-form button{
     width: 100px;
     height: 35px;
-    border-radius: 50px;
+    border-radius: 5px;
     display:inline;
     flex-direction:row;
     align-items: center;
@@ -314,6 +328,10 @@ body{
 
 @media (max-width: 950px){
 
+    .form-registroPrestador{
+        padding-top: 50px;
+        max-height: 100%;
+    }
     .form-registroPrestador h2{ 
         display: list-item;
         font-size: 30px;
@@ -323,8 +341,9 @@ body{
     padding: 10px;
     columns: 1;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 1% 10%;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
     }
 
 
@@ -340,9 +359,4 @@ body{
         margin-bottom: 5px;
     }
 
-}
-#login-message{
-    text-align: center;
-    color:#735F46;
-    
 }
