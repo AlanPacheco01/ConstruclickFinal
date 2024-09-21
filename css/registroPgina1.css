@@ -1,25 +1,25 @@
 .body {
     background-color: #D9D4CC;
     box-sizing: border-box;
-    /* display: flex;
-    align-items: center; */
-    /* height: 100vh;  */
     color: #735F46;
 
 }
 
+#section--container {
+    padding-top: 150px;
+}
 
 .form--container {
     max-width: 722px;
     max-height: 500px;
     background-color: white;
-    padding: 50px 30px;
+    padding: 70px 30px;
     gap: 10px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 70PX !important;
-    margin-bottom: 120px !important;
+    margin-top: 70px !important;
+    margin-bottom: 120px !important; 
     border: 2px solid #d3c5b0;
     border-radius: 8px;
 }
