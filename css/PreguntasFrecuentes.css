@@ -2,10 +2,6 @@ body {
     font-family: "Montserrat";
     color: #735F46;
     background-color: #D9D4CC;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures body takes at least full viewport height */
-    margin: 0; /* Remove default body margin */
 }
 
 #main-container {
@@ -13,8 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1; 
-    gap: 50px;
+    gap: 25px;
     padding: 200px 20px 50px; 
 }
 
@@ -29,21 +24,24 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 30px 0 60px; 
-    color: #735F46;
     width: 100%;
     max-width: 100%;
 }
 
 #list-container li {
-    list-style-type: none;
+    list-style-type: circle;
     padding: 0;
     margin: 0;
 }
 
 #list-container h3 {
-    font-weight: 500;
+    font-weight:500;
     margin: 0; 
     color: #735F46;
+}
+
+#list-container li::marker {
+    font-size: 40px; 
 }
 
 #text-container {
@@ -68,6 +66,10 @@ body {
 
     #list-container h3 {
         font-size: 1.5rem; 
+    }
+
+    #list-container li::marker {
+        font-size: 30px; 
     }
 
     #text-container {
