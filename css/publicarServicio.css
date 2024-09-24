@@ -6,8 +6,12 @@
 }
 .container--formularioPublicarServicio{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     background-color: white;
-    padding: 70px 30px 70px 30px;
+    padding-top: 200px;
+    padding-bottom: 70px;
 }
 
 .form--container {

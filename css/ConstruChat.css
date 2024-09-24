@@ -1,116 +1,273 @@
-/* Importamos la fuente Monserrat de google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    font-family: "Montserrat";
-    color:  #735F46;
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat";
+  color: #735f46;
+  margin: 0;
+  padding: 0;
 }
 
-.userContainer{
-    border-radius: 5px;
-    padding-top: 10px;
-    width: 800px;
-    margin-right: 10px;
-    box-shadow: 0px 1px 5px #735F46;
+*,
+*::before,
+*::after {
+  color: #735f46;
 }
 
-#medalla{
-    color: darkgoldenrod !important;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
 }
-.descripcion p{
-text-align: justify;
-}
-.descripcion h4{
-    font-weight: 650;
-}
-.scrollspy-example {
-    position: relative;
-    height: 400px;
-    margin-top: .5rem;
-    overflow: auto;
-  }
-  .picture{
-    width: 120px;
-    margin-left: 30px;
-    margin-right: 20px;
-  }
-  .picture img{
-        width: 120px;
-        border-radius: 100%;
-        position: relative;
-        top: 50px;
-  }
-  .descripcion{
-    margin-right: 30px;
-  }
-  .sugerencia{
-display: flex;
-flex-direction: row;
-  } 
-  #list-example a {
-    display: block;
-    padding: .5rem;
-    text-decoration: none;
-    color: #000;
-  }
-  #list-example a.active {
-    color: #0d6efd;
-    font-weight: bold;
-  }
 
-.userContainer ul{
-    list-style: none;
+.userContainer {
+  border-radius: 5px;
+  padding: 10px;
+  width: 500px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  height: 480px;
+  overflow-y: auto;
 }
-.userContainer li{
-    display: flex;
-    flex-direction: row;
+
+.userContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-    max-width: 100%;
+
+.userContainer li {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
 }
+
+.picture {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.picture img {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 50%;
+}
+
+.descripcion {
+  margin: 0;
+  flex: 1;
+}
+
+.descripcion h4 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.descripcion p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.sugerencia {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+#list-example a {
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+#list-example a.active {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
 .construChat {
-    width: 700px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 10px;
-    box-shadow: 0px 1px 5px #735F46;
-    height: 480px;
+  width: 700px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px #735f46;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
 }
+
 .chat-box {
-    height: 370px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
+  height: 370px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
 }
+
 .message-input {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
 }
+
 #chatButton {
-    padding: 10px 20px;
-    background-color: #735f46;
-    color: white;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #735f46;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
 #chatButton:hover {
-    background-color: #967957;
-    color: white;
+  background-color: #967957;
+  color: white;
 }
-.chat-form{
-    display: flex;
-    flex-direction: row;
+
+.chat-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-message {
+  max-width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.chat-message.user-message {
+  align-self: flex-end;
+  background-color: #d9d4cc;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 0;
+}
+
+.chat-message.auto-reply {
+  align-self: flex-start;
+  background-color: #bfbab0;
+  color: #721c24;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 0;
+}
+
+.chat-message.user-message::before,
+.chat-message.auto-reply::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.chat-message.user-message::before {
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #d9d4cc transparent;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chat-message.auto-reply::before {
+  border-color: transparent #bfbab0 transparent transparent;
+  left: -10px;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+#chatContent {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .userContainer {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .construChat {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .userContainer {
+    order: 2;
+  }
+
+  .construChat {
+    order: 1;
+  }
+
+  .picture img {
+    width: 50px;
+    max-width: 50px;
+  }
+
+  .descripcion h4 {
+    font-size: 14px;
+  }
+
+  .descripcion p {
+    font-size: 12px;
+  }
+
+  .sugerencia {
+    padding: 8px;
+  }
+
+  .chat-box {
+    height: 250px;
+    overflow-y: auto;
+  }
+
+  .chat-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .message-input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #chatButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .userContainer {
+    height: 40vh;
+    overflow-y: auto;
+  }
+
+  .construChat {
+    height: 60vh;
+  }
 }

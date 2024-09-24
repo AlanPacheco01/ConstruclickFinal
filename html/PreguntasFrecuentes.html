@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-419">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/guiaDediseño.css">
-    <link rel="stylesheet" href="../css/publicarServicio.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Publicar servicio</title>
+    <link rel="stylesheet" href="../css/PreguntasFrecuentes.css">
+    <link rel="stylesheet" href="../css/guiaDediseño.css"> <!-- Se cargan los diseños de la pagina principal -->
+    <!-- Se importa Boostrap 5.3v -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Preguntas Frecuentes</title>
     <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
+</head>
 </head>
 
 <body>
@@ -103,49 +106,77 @@
         </nav>
     </header>
 
-
-    <div class="container--formularioPublicarServicio">
-        <form class="form--container" id="form--publication" style="color:#735F46;">
-            <legend class="legend" >¿Qué quieres promocionar?</legend>
-                <div class="my-2 justify-content-center" style="color:#735F46;">
-                    <div class="col" style="color:#735F46;">
-                        <select class="form-select form-select-lg mb-3" id="whatsPromoted" name="whatsPromoted" aria-label="Large select example" style="color:#735F46;">
-                        <option selected>Selecciona que vas a promocionar</option>
-                        <option value="1">Servicio</option>
-                        <option value="2">Producto</option>
-                        </select>
+    <!-- termina NavBar -->
+    <main id="main-container">
+        <h2>Peguntas Frecuentes</h2>
+        <div id="list-container">
+            <ul>
+                <li id="comoFunc" type="click">
+                    <h3>¿Cómo funciona Construclick?</h3>
+                </li>
+                <div id="text-container">
+                    <div id="comoFunciona">
+                        <p>
+                            Construclick es una plataforma que conecta a personas que necesitan servicios de construcción con contratistas especializados. Los usuarios pueden buscar servicios en áreas como albañilería, plomería, electricidad, y también cotizar materiales de construcción. Todo esto de forma rápida y sencilla desde nuestra plataforma.
+                        </p>
                     </div>
-                </div>   
-                <div class="my-5 justify-content-center" style="color:#735F46; margin-top: -20px;">
-                        <select class="form-select form-select-lg mb-3" id="whichCategory" name="whichCategory" aria-label="Large select example" style="color:#735F46;">
-                            <option selected>Selecciona la categoría</option>
-                            <option value="1">Albañilería</option>
-                            <option value="2">Plomería</option>
-                            <option value="3">Carpintería</option>
-                            <option value="4">Herrería</option>
-                            <option value="5">Vidriería</option>
-                            <option value="6">Jardinería</option>
-                            <option value="7">Otros</option>
-                        </select>
                 </div>
-                <div class="my-5 justify-content-center" style="margin: 0 auto;">
-                    <button type="submit" class="btn btn-secondary btn-lg" id="form--continue" style="background-color: #735F46; margin: 0 auto; width: 200px;">Continuar</button>
+                <li id="formaPart" type="click">
+                    <h3>¿Cómo puedo formar parte de Construclick?</h3>
+                </li>
+                <div id="text-container">
+                    <div id="formaParte">
+                        <p>
+                            Para unirte a Construclick, simplemente regístrate en nuestra página completando un formulario con tus datos. Si eres proveedor o contratista, también puedes crear un perfil profesional y empezar a ofrecer tus servicios o productos a potenciales clientes. 
+                        </p>
+                    </div>
                 </div>
-          </form>
+                <li id="comoContact" type="click">
+                    <h3>¿Cómo me pongo en contacto con mi proveedor?</h3>
+                </li>
+                <div id="text-container">
+                    <div id="comoContacto">
+                        <p>
+                            Una vez que seleccionas un proveedor o contratista, puedes comunicarte con él directamente a través de nuestra plataforma. Toda la información de contacto estará disponible en su perfil, facilitando la comunicación y coordinación para tu proyecto.
+                        </p>
+                    </div>
+                </div>
+                <li id="comoPa" type="click">
+                    <h3>¿Cómo funciona el pago?</h3>
+                </li>
+                <div id="text-container">
+                    <div id="comoPago">
+                        <p>
+                            Los pagos se gestionan directamente entre el cliente y el proveedor. Construclick no procesa pagos, pero puedes acordar la forma de pago con tu proveedor de manera segura. En algunos casos, es posible que se emitan comprobantes fiscales, si el proveedor así lo requiere.
+                        </p>
+                    </div>
+                </div>
+                <li id="cuanServic" type="click">
+                    <h3>¿Cuántos servicios puedo ofrecer como proveedor?</h3>
+                </li>
+                <div id="text-container">
+                    <div id="cuantosServicios">
+                        <p>
+                            Como proveedor en Construclick, puedes ofrecer múltiples servicios en diferentes áreas de la construcción. No hay límite en la cantidad de servicios que puedes listar, permitiendo que alcances a más clientes y proyectos.
+                        </p>
+                    </div>
+                </div>
+            </ul>
         </div>
+    </main>
     <!-- Aqui va a estar el footer -->
     <footer>
         <div class="enlaces">
-            <h2>Contacto</h2>
-            <a href="../html/contacto.html">Forma de contacto</a>
+          <h2>Contacto</h2>
+          <a href="../html/contacto.html">Forma de contacto</a>
             <a href="mailto:service@construclick.com">service@construclick.com</a>
         <div  class="" id="enlaces2">
            
-           <div id="enlaces" style="display: flex; justify-content: center;"> 
-           <a href=" https://www.facebook.com/?locale=es_LA">
-            <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25"></a>
-             <a href="https://www.instagram.com/">
-                <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25" ></a>
+        <div id="enlaces" style="display: flex; justify-content: center;"> 
+          <a href=" https://www.facebook.com/?locale=es_LA">
+          <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25"></a>
+          <a href="https://www.instagram.com/">
+              <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25" ></a>
                 <a href="https://x.com/?mx=2">
                     <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25" ></a>
             </div>
@@ -169,11 +200,10 @@
         <a href="../html/AvisoPrivacidad.html">Aviso de privacidad</a>
     </div>
     </footer>
-    <script src="../javascript/PublicarServicio.js"></script>
         <!-- Se importan los scripts de boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
+        <script src="../javascript/PreguntasFrecuentes.js"></script>
+    </body>
 
 </html>

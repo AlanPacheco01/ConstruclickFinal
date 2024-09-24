@@ -7,6 +7,8 @@ header h2{
 }
 .form-registroPrestador{
     max-height:  100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 
 .form-registroPrestador h1{
@@ -46,10 +48,6 @@ header h2{
     border-inline: 2px;
     border-radius: 50px;
     
-}
-.form-registroPrestador {
-    padding: 30px;
-    max-height: 660px;
 }
 
 .container-form select{

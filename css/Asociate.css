@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: #f4f4f4;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box-1 {
+    background-color: #735F46;
+}
+
+.box-2 {
+    background-color: #735F46;
+}
+
+.box-3 {
+    background-color: #735F46;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p, ul {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #735F46;
+    color: white;
+    border-style: solid ;
+    border-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #735F46;
+}
+/* Media Queries para Tablets */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    p, ul li {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Queries para Teléfonos */
+@media (max-width: 480px) {
+    .box {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p, ul li {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

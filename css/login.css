@@ -1,9 +1,8 @@
 .body {
     background-color: #D9D4CC;
     box-sizing: border-box;
-    /* display: flex;
-    align-items: center; */
-    /* height: 100vh;  */
+    display: flex;
+    align-items: center;  
     color: #735F46;
 
 }
@@ -60,9 +59,10 @@ section {
     color: #735F46;
     background-color: white;
     border: none;
+    padding-top: 150px;
     border-radius: 0%;
     position: relative;
-    top: 6px;
+    top: 6px; 
 }
 
 #welcomeUser h4 {

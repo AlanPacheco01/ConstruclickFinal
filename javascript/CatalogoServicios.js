@@ -15,10 +15,10 @@ function generarCatalogo(servicios) {
                     <div class="catalogo--buttons">
                         <button class="catalogo--options">Contratar</button>
                         <div class="button--container">
-                            <img class="butto--heart" src="../assets/catalogo/heart.svg" alt="heart icon" data-id="${servicio.id}" data-favorito="false">
+                            <img class="butto--heart" src="../assets/catalogo/Heart.svg" alt="heart icon" data-id="${servicio.id}" data-favorito="false">
                         </div>
                         <div class="button--container">
-                            <img class="butto--eye" src="../assets/catalogo/eye-fill.svg" alt="eye icon" data-id="${servicio.id}">
+                            <img class="butto--eye" src="../assets/catalogo/Eye.svg" alt="eye icon" data-id="${servicio.id}">
                         </div>
                     </div>
                 </div>
