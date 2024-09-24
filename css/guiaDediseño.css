@@ -32,6 +32,10 @@ nav h2{
     letter-spacing: 0.1px;
     color: var(--pot);
 }
+nav h2 a {
+    text-decoration: none; /* Eliminar el subrayado */
+    color: var(--pot); /* Asignar el color deseado */
+}
 
 .links--container{ 
     display: flex;
@@ -121,7 +125,8 @@ footer div{
     display: flex;
     flex-wrap: wrap;
     width: 294px;
-    margin-top: 15px;
+    
+    /*margin-top: 15px;*/
 }
 
 footer div h2{
@@ -130,6 +135,7 @@ footer div h2{
     line-height: 10px;
     letter-spacing: 0.1px;
     color: var(--pot);
+    margin-top: 15px;
 }
 
 footer a{

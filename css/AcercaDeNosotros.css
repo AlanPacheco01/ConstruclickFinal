@@ -1,3 +1,4 @@
+@import "./guiaDediseño.css"; /* Importacion de los estilos base */
 body {
     background-color: #D9D4CC;
     font-family: "Montserrat";
@@ -7,7 +8,7 @@ body {
 }
 
 .aboutUs {
-    padding-top: 200px;
+
     padding-bottom: 50px;
     width: 100%;
     font-family: "Montserrat", sans-serif;
@@ -359,7 +360,7 @@ body {
 
 /*Inicia seccion de Colaboradores*/
 
-@import "./GuiaDeDiseno.css"; /* Importacion de los estilos base */
+
 .section--About p{
     font-size: 13px;
     color: #737373;

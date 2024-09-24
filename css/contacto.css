@@ -23,7 +23,7 @@ body {
     font-weight: 600; 
     letter-spacing: 0.2px;
     color: #735f46;
-    padding-top: 140px;
+    padding-top: 20px;
     padding-bottom: 0%;
 }
 
@@ -40,6 +40,22 @@ body {
 }
 
 /****************************************Sección del formulario **************************************/
+
+.form--body{
+    display: flex;
+    /*width: 65%;
+    height: 90%;*/
+    border: 2px solid #d3c5b0;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    /*margin: 0 auto;
+    padding-bottom: 30px;*/
+    /*padding: 3px, 3px, 3px, 5px;*/
+    width: 1100px;
+    height: 650px;
+ margin-left: 40px;
+    margin-right: 40px;
+}
 .main--form {
     display: flex;
     flex-direction: row;
@@ -51,13 +67,7 @@ body {
     gap: 40px;
    padding-top: 25px;
 }
-.form--body{
-    border: 2px solid #d3c5b0;
-    border-radius: 8px;
-    padding: 3px, 3px, 3px, 5px;
-    width: 1000px;
-    height: 650px;
-}
+
 #border{
     justify-content: center;
     display: flex;
@@ -70,7 +80,8 @@ body {
     max-width:100%;
     padding-left: 20px;
     background-attachment: #E6E6E6;
-    width: 100%;
+    /*width: 100%;*/
+    
 }
 
 .form--inputs input {
@@ -200,7 +211,8 @@ body {
     display: flex;
     flex-direction: column;  
     height: fit-content;
-    max-width: 650px;
+    max-width: 450px;
+    /*max-width: 650px;*/
     padding-right: 20px;
 }
 
@@ -209,7 +221,7 @@ body {
 }
 .image--head{
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     gap: 10px;
 }
 .card-body{
@@ -222,6 +234,7 @@ body {
     width: 100%;
     padding: 0%;
     margin-bottom: 3px;
+    text-align: center;
 }
 
 
@@ -231,19 +244,22 @@ body {
 
     .text-center{
         max-width: 100%;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
     }
-    .form--body{
+    
+    .form--body{   
     border: 2px solid #d3c5b0;
     width: 500px;
+    justify-content: space-evenly;
+    height: 550px;
     }
-    #border{
+    /*#border{
         align-items: center;
         height: 600px;
         width: 100%;
-    }
+    }*/
     .form--inputs {
-        max-width: 374px;
+        max-width:100%;
         padding-left: 10px;
         background-attachment: #E6E6E6;
     }
@@ -266,5 +282,62 @@ body {
     #mycard {
         display: none;
     }
+    .contact--information{
+        max-width: 374px;
+    }
+    .text-center p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .text-center{
+        max-width: 100%;
+        padding-bottom: 10px;
+    }
     
+    .form--body{   
+    border: 2px solid #d3c5b0;
+    width: 500px;
+    justify-content: space-evenly;
+    height: 650px;
+    }
+    /*#border{
+        align-items: center;
+        height: 600px;
+        width: 100%;
+    }*/
+    .form--inputs {
+        max-width:80%;
+        padding-left: 10px;
+        background-attachment: #E6E6E6;
+    }
+    
+    .form--inputs input {
+        max-width: 374px;
+        border-radius: 3px;
+        border: 2px solid #d3c5b0;
+        border-radius: 8px;
+      
+    }
+    
+    .form--inputs textarea {
+        max-width: 374px;
+    }
+    .mb-3 p{
+        display: none;
+    }
+   
+    #mycard {
+        display: none;
+    }
+    .contact--information{
+        max-width: 374px;
+    }
+    .text-center p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

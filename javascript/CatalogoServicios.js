@@ -27,7 +27,13 @@ function generarCatalogo(servicios) {
 
         catalogoContainer.innerHTML += servicioHTML;
     });
-
+    const botonesContratar = document.querySelectorAll('.catalogo--options');
+botonesContratar.forEach(boton => {
+    boton.addEventListener('click', function () {
+        window.location.href = '../html/Contratar_Servicio.html';
+    });
+});
+    
     heartEvent();
     eyeEvent();
 }

@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 .imagenes{
     width: 510px;
@@ -23,6 +23,7 @@
     width: 410px;
     margin-left: 10px;
 }
+
 #titulo{
 
     font-size: 40px;
@@ -30,6 +31,7 @@
     font-weight: 600; 
     letter-spacing: 0.2px;
     color: var(--pot);
+    padding-top: 10px;
 }
 
 #descripcion{
@@ -70,13 +72,16 @@
 }
 
 .panelInferior{
+   
     margin-left: 20%;
     margin-right: 15%;
+    margin-bottom: 30px;
 }
 
 .panelInferior p{
     font-weight: 500;
     text-align: justify;
+    
 }
 
 .opiniones{
@@ -106,6 +111,9 @@
     }
     .preguntas{
         width: 280px;
+    }
+    #titulo{
+        padding-top: 10px;
     }
     
 }

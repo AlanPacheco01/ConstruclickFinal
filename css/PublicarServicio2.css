@@ -6,8 +6,7 @@
 }
 
 .form--container {
-  margin-top: 200px !important;
-  margin-bottom: 100px !important;
+  
   max-width: 784px;
   background-color: white;
   padding: 50px;
@@ -20,8 +19,7 @@
   border: 2px solid #d3c5b0;
 }
 .container--formularioPublicarServicio{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 70px 30px;
 }
 .option{
   color: #735F46;
@@ -52,7 +50,7 @@
 @media (max-width: 700px) {
   .form--container {
     padding: 20px;
-    margin: 50px auto;
+    margin: 0 auto;
     overflow-x: hidden; 
     background-color: white;
   }
