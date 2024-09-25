@@ -71,6 +71,8 @@ Dependencias de Spring boot:
 
 #### Dedicatorias:
 
+Alan Pacheco: Dedico este proyecto a mi familia que siempre me ha mostrado su apoyo, a mis amigos que me asesoraron y me animaron a cambiar mi trayectoria profesional, a Cintia Solano que me brindó ánimos cuando estaba estresado y sentía que no había salida.
+
 
 
 
