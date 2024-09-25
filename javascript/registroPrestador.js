@@ -125,7 +125,7 @@ const user = {
     'telephone': telefono
 };
 
-const URL = `http://3.144.151.137localhost:8080/registro/r1`;
+const URL = `http://localhost:8080/registro/r1`;
 
 fetch(URL, {
     method: 'POST',
