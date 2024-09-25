@@ -1,24 +1,27 @@
-const mostrarInfo = document.getElementById('recuperar');
+const mostrarInfo = document.getElementById('form--publication');
 
-mostrarInfo.addEventListener('click', (event) => {
+// Alertas ocultas por defecto
+const welcomeUser = document.getElementById("welcomeUser");
+welcomeUser.hidden = true;
+
+const wrongMail = document.getElementById("wrongMail--alert");
+wrongMail.hidden = true;
+
+const wrongPassword = document.getElementById("wrongPassword--alert");
+wrongPassword.hidden = true;
+
+const unexistingUser = document.getElementById("unexistingUser--alert");
+unexistingUser.hidden = true;
+
+
+
+mostrarInfo.addEventListener('submit', (event) => {
     event.preventDefault(); // Evitar el comportamiento predeterminado
 
-    // Obtener valores del formulario
+
+// Obtener valores del formulario
     const correoElectronico = document.getElementById('emailUser').value;
     const password = document.getElementById('passwordUser').value;
-
-    // Alertas ocultas por defecto
-    const welcomeUser = document.getElementById("welcomeUser");
-    welcomeUser.hidden = true;
-
-    const wrongMail = document.getElementById("wrongMail--alert");
-    wrongMail.hidden = true;
-
-    const wrongPassword = document.getElementById("wrongPassword--alert");
-    wrongPassword.hidden = true;
-
-    const unexistingUser = document.getElementById("unexistingUser--alert");
-    unexistingUser.hidden = true;
 
     // Información del formulario
     const loginForm = document.getElementById("form--publication");
@@ -40,7 +43,7 @@ mostrarInfo.addEventListener('click', (event) => {
     }
 
     // Fetch para verificar si el correo está en la base de datos
-    const url = `http://localhost:8080/contractarServicio/r2/construclick2/email?construemail=${correoElectronico}`;
+    const url = `http://localhost:8080/contratarServicio/r1/construclick2/email?construemail=${correoElectronico}`;
     fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -53,7 +56,7 @@ mostrarInfo.addEventListener('click', (event) => {
             if (data.password === password) {
                 welcomeUser.hidden = false; // Mostrar mensaje de bienvenida
                 setTimeout(() => {
-                    window.location.href = "../Perfil.html"; // Redirigir a la página principal
+                    window.location.href = "./perfil.html"; // Redirigir a la página principal
                 }, 3000);
             } else {
                 wrongPassword.hidden = false; // Mostrar alerta de contraseña incorrecta

@@ -118,6 +118,7 @@
   <header>
     <h2>Contratar servicio</h2>
   </header>
+
         <form class="container-form" id="RegistroPrestador">
          
             <ul class="form-list">
@@ -128,7 +129,7 @@
                             name="Nombre"
                             placeholder="Escribe tu nombre completo" id="userName">
                     </label>
-                    <div class="alert alert-danger" id="name--alert" hidden role="alert">
+                    <div class="alert alert-danger" id="name--alert"  role="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
                         <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                         <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
@@ -144,12 +145,12 @@
                     <input type="file" id="fotoperfil" accept="image/png, image/jpeg"/> </label>
                 </li>
 
-                <li class="input-correo" id="userEmail">Correo
+                <li class="input-correo" id="userEmailLista">Correo
                     <label>Ej. juan_p123@correo.com
                     <input type="email" class="form-control" id="userEmail" autocomplete="email"
                             placeholder="Escribe tu correo electrónico">
                     </label>
-                    <div class="alert alert-danger" hidden id="email--alert" role="alert">
+                    <div class="alert alert-danger"  id="email--alert" role="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
                         <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                         <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
@@ -162,10 +163,10 @@
 
                 <li class="input-contraseña">Contraseña                    
                     <label>min. 8 caracteres, un dígito, un símbolo y una mayúscula
-                        <input type="password" class="form-control" id="contraseña" autocomplete="new-password"
+                        <input type="password" class="form-control" id="contrasena" autocomplete="new-password"
                         placeholder="Ingrese su contraseña">
                     </label>
-                    <div class="alert alert-danger" hidden id="password--alert" role="alert">
+                    <div class="alert alert-danger"  id="password--alert" role="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
                             <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                             <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
@@ -177,10 +178,10 @@
                 </li>
 
                 <li class="input-confirmarContraseña">Confirmar contraseña                        
-                        <input type="password" class="form-control" id="confirmaContraseña" autocomplete="new-password"
+                        <input type="password" class="form-control" id="confirmaContrasena" autocomplete="new-password"
                         placeholder="Ingresa nuevamente tu contraseña">
                 </li>
-                <div class="alert alert-danger" hidden id="password2--alert" role="alert">
+                <div class="alert alert-danger"  id="password2--alert" role="alert">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
                         <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                         <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
@@ -192,11 +193,11 @@
             </ul>
 
             <ul>
-                <li class="input-tel" id="userPhone">Teléfono                  
+                <li class="input-tel" id="userPhoneLista">Teléfono                  
                     <label>Número a 10 dígitos
                     <input type="text" class="form-control" id="userPhone" placeholder="55 XX XX XX XX">
                     </label>
-                    <div class="alert alert-danger" hidden id="phone--alert" role="alert">
+                    <div class="alert alert-danger"  id="phone--alert" role="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
                             <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                             <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
@@ -210,7 +211,8 @@
             <li>
                 ¿Buscas servicios en CDMX o Estado de
                     México?
-                    <div class="alert alert-danger" hidden id="place--alert" role="alert">
+
+                    <div class="alert alert-danger"  id="placeAlert" role="alert" class="placeAlert" hidden>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
                             <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
                             <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
@@ -240,7 +242,7 @@
             </ul>
             <ul>
                 <li class="form--buttom2">
-                        <div class="alert alert-success" hidden id="saved--alert" role="alert">
+                        <div class="alert alert-success"  id="saved--alert" role="alert">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" id="img--alert" viewBox="0 0 16 16">
                                 <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
                                 <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
@@ -255,51 +257,45 @@
             </form>
             <br> <br>
     </section>
-    <!-- Aqui va a estar el footer -->
-    <footer>
-        <div class="enlaces">
-            <h2>Contacto</h2>
-            <a href="../html/contacto.html">Forma de contacto</a>
-            <a href="mailto:service@construclick.com">service@construclick.com</a>
-        <div  class="" id="enlaces2">
-           
-           <div id="enlaces" style="display: flex; justify-content: center;"> 
-           <a href=" https://www.facebook.com/?locale=es_LA">
-            <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25"></a>
-             <a href="https://www.instagram.com/">
-                <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25" ></a>
-                <a href="https://x.com/?mx=2">
-                    <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25" ></a>
-            </div>
-        
+   <!-- Aqui va a estar el footer -->
+   <footer>
+    <div class="enlaces">
+        <h2>Contacto</h2>
+        <a href="../html/contacto.html">Formulario de contacto</a>
+        <a href="mailto:service@construclick.com">service@construclick.com</a>
+    <div  class="" id="enlaces2">
+       
+       <div id="enlaces" style="display: flex; justify-content: center;"> 
+       <a href=" https://www.facebook.com/?locale=es_LA">
+        <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25"></a>
+         <a href="https://www.instagram.com/">
+            <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25" ></a>
+            <a href="https://x.com/?mx=2">
+                <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25" ></a>
         </div>
+    
     </div>
-    <div>
-        <h2>Catalogo</h2>
-        <a href="../html/catalogo.html">Contrata</a>
-        <a href="../html/publicarServicio.html">Anunciate</a>
-    </div>
-    <div>
-        <h2>Mi cuenta</h2>
-        <a href="../html/registroPagina1.html">Registrate</a>
-        <a href="../html/login.html">Inicia sesión</a>
-    </div>
-    <div>
-        <h2>Conócenos</h2>
-        <a href="../html/TerminosCondiciones.html">Terminos y condiciones</a>
-        <a href="../html/PreguntasFrecuentes.html">Preguntas frecuentes</a>
-        <a href="../html/AvisoPrivacidad.html">Aviso de privacidad</a>
-    </div>
-    </footer>
+</div>
+<div>
+    <h2>Catalogo</h2>
+    <a href="../html/catalogo.html">Contrata</a>
+    <a href="../html/publicarServicio.html">Anunciate</a>
+</div>
+<div>
+    <h2>Mi cuenta</h2>
+    <a href="../html/registroPagina1.html">Registrate</a>
+    <a href="../html/login.html">Inicia sesión</a>
+</div>
+<div class="conocenos">
+    <h2>Conócenos</h2>
+    <a href="../html/TerminosCondiciones.html">Terminos y condiciones</a>
+    <a href="../html/PreguntasFrecuentes.html">Preguntas frecuentes</a>
+    <a href="../html/AvisoPrivacidad.html">Aviso de privacidad</a>
+</div>
+</footer>
 
-    <script src="../javascript/registroPrestador.js"></script>
-    <!--Bootstrap para diseno formulario-->   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!--Bootstrap para ocultar las alertas-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-    <!--Bootstrap para navbar y footer-->
+    <script src="../javascript/pruebasregistro.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"  crossorigin="anonymous"></script>
 </body>
