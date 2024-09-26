@@ -8,9 +8,9 @@
 
 body {
     font-family: 'Montserrat';
-    color: #f4f4f4;
+    color: #735F46;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color:white;
 }
 
 .container {
@@ -18,29 +18,32 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
+    min-height: 150vh;
+    border: 2px solid #735F46;
 }
 
 .box {
+    
     width: 80%;
     max-width: 800px;
     padding: 40px;
     margin: 20px;
     text-align: center;
     border-radius: 10px;
+    border: 2px solid #735f46;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .box-1 {
-    background-color: #735F46;
+    background-color: white;
 }
 
 .box-2 {
-    background-color: #735F46;
+    background-color: white;
 }
 
 .box-3 {
-    background-color: #735F46;
+    background-color: white;
 }
 
 h1, h2 {
@@ -48,7 +51,7 @@ h1, h2 {
 }
 
 p, ul {
-    margin-bottom: 20px;
+    margin-bottom:  20px;
 }
 
 ul {
@@ -57,7 +60,7 @@ ul {
 
 ul li {
     margin: 10px 0;
-    font-weight: bold;
+    font-weight:;
 }
 
 .cta-button {
@@ -66,18 +69,19 @@ ul li {
     background-color: #735F46;
     color: white;
     border-style: solid ;
-    border-color: white;
+    border-color: #735f46;
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
 }
 
 .cta-button:hover {
-    background-color: #735F46;
+    background-color: #D9D4CC;
 }
 /* Media Queries para Tablets */
 @media (max-width: 768px) {
     .box {
+        margin: auto;
         width: 90%;
         padding: 30px;
     }
