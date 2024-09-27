@@ -79,11 +79,6 @@ Dependencias de Spring boot:
 
 Alan Pacheco: Dedico este proyecto a mi familia que siempre me ha mostrado su apoyo, a mis amigos que me asesoraron y me animaron a cambiar mi trayectoria profesional, a Cintia Solano que me brindó ánimos cuando estaba estresado y sentía que no había salida.
 
-Pablo Ortega: 
-
-Miriam Medina: Dedico este proyecto a mi familia, que ha sido mi mayor fuente de inspiración. A mis padres, y especialmente a mi mamá, por su incondicional apoyo en cada decisión que he tomado. A mis hermanos, cuyas palabras de aliento y consejos siempre me han guiado. A mi novia, Abril Herrera, por hacerme más valiente y por creer en mí en cada paso del camino. Y a mis adoradas mascotas, que son el motor de mi vida, siempre mostrándome amor y cariño en cada circunstancia. ¡Gracias a todos ustedes por hacer posible este proyecto y por ser parte fundamental de mi viaje en este bootcamp!
-
-Damián Campos: 
 
 
 
