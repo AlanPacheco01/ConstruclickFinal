@@ -2,6 +2,12 @@
 
 ####  *"Un futuro mejor a un click de distancia"* 
 
+#### *Descripción del proyecto*
+
+El mercado de la construcción enfrenta actualmente desafíos significativos, como la falta de contratistas confiables, la carencia de espacios seguros y accesibles para mujeres contratistas, y la presencia de plataformas poco intuitivas para la promoción de servicios. Construclick surge como una solución integral a estas problemáticas, impulsando una transformación en la industria mediante la promoción de profesionales cuyo trabajo es trazable y garantiza confianza para todos los usuarios.
+
+#### 
+
 #####  **Este proyecto fue realizado en su mayoría por las siguientes personas:**
 
 - Mónica Jasso 
@@ -47,7 +53,7 @@ El proyecto se dividió en 3 sprints, en donde se abordaron los siguientes objet
 
 Dependencias de Spring boot:
 - **Spring Data JPA**
--  **Spring WEB**
+- **Spring WEB**
 - **MySQL Driver**
 
 3. **MySQL**
@@ -65,7 +71,7 @@ Dependencias de Spring boot:
 
 - A los aliados de Generation Mx, gracias a sus donativos estamos más cerca de tener una nueva vida
 
-- Al equipo de Instrucción, conformado por Daniel Maldonado y Fernanda Rámos, gracias a las sesiones que nos dieron fuimos capaces de alcanzar nuevos horizontes
+- Al equipo de Instrucción, conformado por Daniel Maldonado, Fernanda Rámos y Liliana Aguirre, gracias a las sesiones que nos dieron fuimos capaces de alcanzar nuevos horizontes
 
 - Al equipo de Mentoría, conformado por Yareri Arcos y Tadeo Zepeda, gracias a sus concejos mejoramos como profesionistas y fuimos capaces de abrirnos paso en un nuevo mercado
 
@@ -73,7 +79,7 @@ Dependencias de Spring boot:
 
 Alan Pacheco: Dedico este proyecto a mi familia que siempre me ha mostrado su apoyo, a mis amigos que me asesoraron y me animaron a cambiar mi trayectoria profesional, a Cintia Solano que me brindó ánimos cuando estaba estresado y sentía que no había salida.
 
-Miriam Medina: Dedico este proyecto a mi familia, que ha sido mi mayor fuente de inspiración. A mis padres, y especialmente a mi mamá, por su incondicional apoyo en cada decisión que he tomado. A mis hermanos, cuyas palabras de aliento y consejos siempre me han guiado. A mi novia, Abril Herrera, por hacerme más valiente y por creer en mí en cada paso del camino. Y a mis adoradas mascotas, que son el motor de mi vida, siempre mostrándome amor y cariño en cada circunstancia. ¡Gracias a todos ustedes por hacer posible este proyecto y por ser parte fundamental de mi viaje en este bootcamp!
+
 
 
 

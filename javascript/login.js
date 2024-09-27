@@ -56,7 +56,7 @@ mostrarInfo.addEventListener('submit', (event) => {
             if (data.password === password) {
                 welcomeUser.hidden = false; // Mostrar mensaje de bienvenida
                 setTimeout(() => {
-                    window.location.href = "./perfil.html"; // Redirigir a la página principal
+                    window.location.href = "./perfil.html"; // Redirigir al perfil del usuario
                 }, 3000);
             } else {
                 wrongPassword.hidden = false; // Mostrar alerta de contraseña incorrecta

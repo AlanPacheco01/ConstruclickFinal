@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding-top: 150px;
+    padding-top: 60px;
     color: #8C7E6C;
 }
 
@@ -65,7 +65,7 @@ body {
     color: #735F46;
     justify-content:center;
     gap: 40px;
-   padding-top: 25px;
+   padding-top: 40px;
 }
 
 #border{
